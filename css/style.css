@@ -148,10 +148,20 @@ body {
   box-sizing: border-box;
 }
 
-.navigation-icon-search{
-  background-image: url(../images/background/search.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.navigation-search-icon, .navigation-preferences-icon{
+  display: block;
+  fill:  #000000;
+}
+
+.navigation-preferences:hover .navigation-preferences-icon,.navigation-preferences:focus-visible .navigation-preferences-icon,
+.navigation-search:hover .navigation-search-icon,.navigation-search:focus-visible .navigation-search-icon{
+  fill: #68A2CA;
+}
+
+.navigation-preferences:active .navigation-preferences-icon,
+.navigation-search:active .navigation-search-icon {
+  fill: #82B3D3;
+
 }
 
 .navigation-icon-preferences{
@@ -185,6 +195,7 @@ body {
   text-align: center;
   border: none;
   border-radius: 4px;
+  overflow-wrap:break-word;
 }
 
 .big-button{
@@ -383,8 +394,6 @@ body {
 }
 
 .search-button{
-  text-decoration: none;
-  display: inline-block;
   padding: 8px 50px;
   min-width: 276px;
   border: none;
@@ -438,6 +447,7 @@ flex-grow: 1;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border: none;
+  box-sizing: border-box;
 }
 
 .field-input {
@@ -603,7 +613,7 @@ flex-grow: 1;
 .range-input{
   width: 143px;
   box-sizing: border-box;
-  padding: 12px 20px;
+  padding: 12px 40px 12px 20px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -849,21 +859,22 @@ line-height: 28px;
 }
 
 .card-rate{
-font-size: 16px;
-line-height: 20px;
-text-transform: uppercase;
-padding: 9px 22px 8px 23px;
-background-color: #F2F2F2;
-border-radius: 4px;
-margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  padding: 9px 22px 8px 23px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+  margin: 0;
+  align-self: end;
 }
 .pages-link{
-font-weight: 700;
-font-size: 20px;
-line-height: 36px;
-text-align: center;
-vertical-align: middle;
-text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
 }
 
 .main-inner .subscribe{
@@ -962,41 +973,31 @@ text-transform: uppercase;
   margin: 0;
 }
 
-.card-rate{
-  align-self: end;
-}
 .star{
   position: relative;
-  display: block;
-  margin: 0;
   width: 140px;
   min-height: 17px;
   padding: 10px 0;
-  background-color: #ced6c6;
+  align-self: end;
 }
 
 .star::before{
+  content: "";
+  height: 17px;
   position: absolute;
   background-image: url(../images/background/star.svg);
   background-repeat: space no-repeat;
   background-size: contain;
-
 }
 
-.star-two{
-  margin: 0;
-  background-image: url(../images/background/TwoStars.svg);
-  background-repeat: no-repeat;
-  background-position-y: center;
+.star-three::before{
+  width: 66px;
 }
 
-.star-three{
-
+.star-four::before{
+  width: 90px;
 }
 
-.star-four{
-  margin: 0;
-  background-image: url(../images/background/FourStars.svg);
-  background-repeat: no-repeat;
-  background-position-y: center;
+.star-two::before{
+  width: 42px;
 }
