@@ -123,7 +123,16 @@ body {
   padding: 20px 16px;
 }
 
-.navigation-link-hover:hover::after{
+.navigation-link:focus, .search-button,
+.subscribe-button:focus, .footer-social-link, .footer-developer:focus{
+  outline: none;
+}
+
+.navigation-link-hover:active::after{
+  background-color: #82B3D3;
+}
+
+.navigation-link-hover:hover::after, .navigation-link-hover:focus-visible::after{
   position: absolute;
   content: "";
   left: 16px;
@@ -133,12 +142,12 @@ body {
   background-color: #756257;
 }
 
-.user-navigation .navigation-link{
-  padding: 22px 12px;
+.navigation-link-hover:active::after{
+  background-color: #82B3D3;
 }
 
-.user-navigation .button:hover{
-  background-color: #615048;
+.user-navigation .navigation-link{
+  padding: 22px 12px;
 }
 
 .user-navigation .button{
@@ -146,6 +155,15 @@ body {
   padding: 8px 34px;
   max-width: 160px;
   box-sizing: border-box;
+}
+
+.user-navigation .button:hover, .user-navigation .button:focus-visible, .search-button:hover, .search-button:focus-visible{
+  background-color: #615048;
+}
+
+.user-navigation .button:active, .search-button:active{
+  background-color: #756157;
+
 }
 
 .navigation-search-icon, .navigation-preferences-icon{
@@ -161,14 +179,6 @@ body {
 .navigation-preferences:active .navigation-preferences-icon,
 .navigation-search:active .navigation-search-icon {
   fill: #82B3D3;
-
-}
-
-.navigation-icon-preferences{
-  background-image: url(../images/background/preferences.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative
 }
 
 .user-navigation-counter{
@@ -432,6 +442,7 @@ body {
 .subscribe-field{
 flex-grow: 1;
 }
+
 .subscribe-button{
   min-width: 132px;
   min-height: 36px;
@@ -439,6 +450,15 @@ flex-grow: 1;
   border: none;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  background-color: #82B3D3;
+}
+
+.subscribe-button:hover, .subscribe-button:focus-visible{
+  background-color: #68A2CA;
+}
+.subscribe-button:active{
+  background-color: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .field-input{
@@ -455,11 +475,6 @@ flex-grow: 1;
   font-size: 18px;
   line-height: 24px;
   background-color: #F2F2F2;
-;
-}
-
-.subscribe-button{
-  background-color: #82B3D3;
 }
 
 .footer{
@@ -494,9 +509,18 @@ flex-grow: 1;
   right: 0;
   left: 0;
   margin: auto;
-
-
+  fill: #83b3d3;
 }
+
+.footer-social-link:hover .navigation-icon,
+.footer-social-link:focus-visible .navigation-icon{
+  fill: #68A2CA;
+}
+
+.footer-social-link:active .navigation-icon{
+  fill: rgba(104, 162, 202, 0.3);
+}
+
 
 .footer-phone{
   display: flex;
@@ -510,10 +534,35 @@ flex-grow: 1;
   line-height: 40px;
 }
 
+
+.phones-number:hover,
+.phones-number:focus-visible {
+  color: #756157;
+  outline: none;
+}
+
+.phones-number:active {
+  opacity: 0.3;
+}
+
 .footer-developer{
   position: relative;
   width: 115px;
   height: 40px;
+}
+
+.footer-developer .navigation-icon{
+  fill: #000000;
+}
+
+.footer-developer:hover .navigation-icon,
+.footer-developer:focus-visible .navigation-icon{
+  fill: #756157;
+}
+
+.footer-developer:active .navigation-icon{
+  fill: rgba(117, 97, 87, 0.3);
+;
 }
 
 .inner-wrapper{
