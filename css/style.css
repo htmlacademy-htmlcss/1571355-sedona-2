@@ -1194,7 +1194,7 @@ line-height: 24px;
 .modal-form{
   display: grid;
   grid-template-columns: 137px 440px;
-  grid-template-rows: auto auto auto auto auto 48px auto;
+  grid-template-rows: auto auto auto auto auto auto;
   align-items: center;
 }
 
@@ -1233,14 +1233,29 @@ line-height: 24px;
 .modal-quantity-wrapper{
   grid-column: 1/-1;
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
 }
 
 .modal-group{
   display: flex;
+  width: 247px;
 }
 
 .quantity-group{
   display: flex;
+  margin: 0;
+}
+
+.quantity-input{
+  appearance
+Changes the appearance of buttons and other controls to resemble native controls.
+
+Widely available across major browsers (Baseline since September 2024)
+Learn more
+
+Don't show
+: textfield;
 }
 
 .form-wrapper-tooltip{
