@@ -110,7 +110,11 @@ body {
   justify-content: flex-end;
 }
 
-.navigation-link,.card-link,.footer-social-link,.phones-number,.pages-link{
+.navigation-link,
+.card-link,
+.footer-social-link,
+.phones-number,
+.pages-link{
   display: block;
   color: #000;
   text-decoration: none;
@@ -161,8 +165,15 @@ body {
   cursor: pointer;
 }
 
-.navigation-link:focus, .search-button, .pages-link, .viewer-link, .card-link,.filter-button-submit,
-.subscribe-button:focus, .footer-social-link, .footer-developer:focus{
+.navigation-link:focus,
+.search-button,
+.pages-link,
+.viewer-link,
+.card-link,
+.filter-button-submit,
+.subscribe-button:focus,
+.footer-social-link,
+.footer-developer:focus{
   outline: none;
 }
 
@@ -170,7 +181,8 @@ body {
   opacity: 0.3;
 }
 
-.navigation-link-hover:hover, .navigation-link-hover:focus-visible{
+.navigation-link-hover:hover,
+.navigation-link-hover:focus-visible{
   color: #82B3D3;
 }
 
@@ -185,22 +197,29 @@ body {
   box-sizing: border-box;
 }
 
-.user-navigation .button:hover,.user-navigation .button:focus-visible,.search-button:hover,.search-button:focus-visible{
+.user-navigation .button:hover,
+.user-navigation .button:focus-visible,
+.search-button:hover,
+.search-button:focus-visible{
   background-color: #615048;
 }
 
-.user-navigation .button:active,.search-button:active{
+.user-navigation .button:active,
+.search-button:active{
    background-color: #756157;
   color: rgb(255 255 255 / 30%);
 }
 
-.navigation-search-icon, .navigation-preferences-icon{
+.navigation-search-icon,
+.navigation-preferences-icon{
   display: block;
   fill:  #000;
 }
 
-.navigation-preferences:hover .navigation-preferences-icon,.navigation-preferences:focus-visible .navigation-preferences-icon,
-.navigation-search:hover .navigation-search-icon,.navigation-search:focus-visible .navigation-search-icon{
+.navigation-preferences:hover .navigation-preferences-icon,
+.navigation-preferences:focus-visible .navigation-preferences-icon,
+.navigation-search:hover .navigation-search-icon,
+.navigation-search:focus-visible .navigation-search-icon{
   fill: #68A2CA;
 }
 
@@ -246,7 +265,9 @@ body {
   margin-bottom: 69px;
 }
 
-.section-title,.search-title,.subscribe-title {
+.section-title,
+.search-title,
+.subscribe-title {
   color: #000;
   font-size: 30px;
   font-weight: 700;
@@ -255,7 +276,9 @@ body {
   margin: 0;
 }
 
-.section-description,.search-text,.subscribe-text{
+.section-description,
+.search-text,
+.subscribe-text{
   font-size: 22px;
   line-height: 26px;
   margin: 0;
@@ -301,7 +324,6 @@ body {
   padding: 112px 85px;
 }
 
-
 .features-large{
   display: flex;
   width: 1200px;
@@ -311,12 +333,16 @@ body {
   padding: 0;
 }
 
+.features-large:last-child {
+  flex-direction: row-reverse;
+}
+
 .features-small:nth-of-type(odd) {
-  background-color: rgb(131 179 211 / 12%);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .features-small:nth-of-type(even) {
-  background-color: rgb(131 179 211 / 20%);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .features-large-wrapper{
@@ -379,7 +405,7 @@ body {
 }
 
 .services-item:nth-of-type(odd){
-  background-color: #83B3D31F;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .services-item-dwelling{
@@ -450,7 +476,8 @@ body {
   flex-grow: 1;
 }
 
-.subscribe-button:hover,.subscribe-button:focus-visible{
+.subscribe-button:hover,
+.subscribe-button:focus-visible{
   background-color: #68A2CA;
 }
 
@@ -922,7 +949,8 @@ body {
   border-radius: 4px;
 }
 
-.viewer-link-active,.viewer-link:not(.viewer-link-active):hover,
+.viewer-link-active,
+.viewer-link:not(.viewer-link-active):hover,
 .viewer-link:not(.viewer-link-active):active{
   border-color: #000;
 }
