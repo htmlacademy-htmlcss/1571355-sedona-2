@@ -403,7 +403,7 @@ body {
   width: 400px;
   padding: 183px 85px 81px;
   background-repeat: no-repeat;
-  background-position: 162.5px 81px;
+  background-position: 163px 81px;
 }
 
 .services-item:nth-of-type(odd){
@@ -420,6 +420,7 @@ body {
 
 .services-item-gift{
   background-image: url("../images/background/gift.svg");
+  background-position: 169px 81px;
 }
 
 .services-item-text{
@@ -464,7 +465,7 @@ body {
 }
 
 .subscribe-description{
-  margin-bottom: 54px;
+  margin-bottom: 56px;
 }
 
 .subscribe-form{
@@ -503,7 +504,7 @@ body {
 
 .footer{
   display: flex;
-  padding: 40px 70px 30px;
+  padding: 45px 70px 30px;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -551,7 +552,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 331px; ;
+  width: 333px;
+  padding-right: 46px;
 }
 
 .phones-number{
@@ -587,7 +589,7 @@ body {
   background-size: cover;
   background-position: left top;
   background-repeat: no-repeat;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 57px;
 }
 
 .filters-form{
@@ -900,7 +902,7 @@ body {
 
 .sort-select{
   width: 292px;
-  padding: 14px 20px;
+  padding: 12.5px 19px;
   padding-right: 52px;
   background-color: inherit;
   font-family: "PT Sans", sans-serif;
@@ -911,7 +913,7 @@ body {
   appearance: none;
   background-image: url("../images/background/select-arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 20px center;
+  background-position: right 18px center;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   cursor: pointer;
