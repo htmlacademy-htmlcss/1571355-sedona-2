@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body>
@@ -83,7 +85,7 @@
             </li>
             <li class="features-item features-large">
               <div class="features-large-wrapper">
-                <h3 class="features-subtitle section-subtitle">Там есть мост дьявола</h3>
+                <h3 class="features-subtitle section-subtitle">Там есть<br>мост дьявола</h3>
                 <p class="features-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
               <img class="features-img" src="./images/content/devil's-bridge.jpg" width="800" height="385"
@@ -105,7 +107,7 @@
             </li>
             <li class="services-item services-item-gift">
               <h3 class="services-item-title section-subtitle">Сувениры</h3>
-              <p class="services-item-text">Не только китайского,но и настоящего местного производства!</p>
+              <p class="services-item-text">Не только китайского,<br>но и настоящего местного производства!</p>
             </li>
           </ul>
         </section>
@@ -116,7 +118,7 @@
             предложения гостиниц в
             Седоне</p>
           <button class="search-button button big-button" type="button">
-            Поиск гостинцы в Седоне
+            Поиск гостиницы в Седоне
           </button>
         </section>
         <section class="subscribe">
@@ -169,7 +171,7 @@
         <div class="footer-phone">
           <a class="phones-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </div>
-        <a class="footer-developer" href="https://htmlacademy.ru/">
+        <a class="footer-developer" href="https://htmlacademy.ru/intensive/htmlcss">
           <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
             width="115" height="33" viewBox="0 0 115 33">
             <path
@@ -179,8 +181,8 @@
       </footer>
     </div>
     <div class="modal-container modal-invisible">
-      <div class="modal-search modal ">
-        <button class="modal-button-close">
+      <div class="modal-search modal">
+        <button class="modal-button-close" type="button">
           <span class="visually-hidden">Закрыть</span>
           <svg class="modal-button-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
             width="14" height="14" viewBox="0 0 14 14">
@@ -191,28 +193,33 @@
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="form-label" for="arrival-date">
-              Дата заезда:
+              Дата Заезда:
             </label>
-            <input class="date-input" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020">
+            <input class="date-input" type="text" id="arrival-date" name="arrival-date" placeholder="27 апреля 2020"
+              required>
             <p class="modal-prompt modal-prompt-warning">Мы не можем отправить вас в прошлое.</p>
             <label class="form-label" for="departure-date">
-              Дата выезда:
+              Дата Выезда:
             </label>
             <input class="date-input" type="text" id="departure-date" name="departure-date"
-              placeholder="1 сентября 2023">
+              placeholder="1 сентября 2023" required>
             <p class="modal-prompt">На эти даты есть свободные номера. Пока есть.</p>
             <div class="modal-quantity-wrapper">
               <div class="modal-group">
                 <label class="form-label" for="adults-quantity">Взрослые:</label>
                 <p class="quantity-group">
-                  <button class="quantity-minus" type="button"><svg class="quantity-icon" aria-hidden="true"
-                      focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2">
+                  <button class="quantity-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество взрослых в бронировании</span>
+                    <svg class="quantity-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="14" height="2" viewBox="0 0 14 2">
                       <path d="M0 0v2h14V0z" />
                     </svg></button>
                   <input class="quantity-input" type="number" id="adults-quantity" name="adults-quantity" min="1"
-                    placeholder="1">
-                  <button class="quantity-plus" type="button"><svg class="quantity-icon" aria-hidden="true"
-                      focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    placeholder="2">
+                  <button class="quantity-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество взрослых в бронировании</span>
+                    <svg class="quantity-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="14" height="14" viewBox="0 0 14 14">
                       <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6z" />
                     </svg></button>
                 </p>
@@ -221,6 +228,7 @@
                 <div class="form-wrapper-tooltip">
                   <label class="form-label" for="children-quantity">Дети:</label>
                   <button class="tooltip-toggle" type="button">
+                    <span class="visually-hidden">Посмотреть дополнительную информацию</span>
                   </button>
                   <div class="tooltip-popover">
                     <span class="visually-hidden">Дополнительная информация</span>
@@ -229,23 +237,28 @@
                   </div>
                 </div>
                 <p class="quantity-group">
-                  <button class="quantity-minus" type="button"><svg class="quantity-icon" aria-hidden="true"
-                      focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2">
+                  <button class="quantity-minus" type="button">
+                    <span class="visually-hidden">Уменьшить количество детей в бронировании</span>
+                    <svg class="quantity-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="14" height="2" viewBox="0 0 14 2">
                       <path d="M0 0v2h14V0z" />
-                    </svg></button>
+                    </svg>
+                  </button>
                   <input class="quantity-input" type="number" id="children-quantity" name="children-quantity"
-                    placeholder="0">
-                  <button class="quantity-plus" type="button"><svg class="quantity-icon" aria-hidden="true"
-                      focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                    placeholder="2">
+                  <button class="quantity-plus" type="button">
+                    <span class="visually-hidden">Увеличить количество детей в бронировании</span>
+                    <svg class="quantity-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                      width="14" height="14" viewBox="0 0 14 14">
                       <path d="M14 6H8V0H6v6H0v2h6v6h2V8h6z" />
-                    </svg></button>
+                    </svg>
+                  </button>
                 </p>
               </div>
             </div>
             <button class="modal-submit" type="submit">найти</button>
           </form>
         </section>
-
       </div>
     </div>
   </body>
