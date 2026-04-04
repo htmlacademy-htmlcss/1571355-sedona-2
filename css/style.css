@@ -164,6 +164,7 @@ body {
   cursor: pointer;
 }
 
+.sort-select,
 .navigation-link:focus,
 .search-button,
 .pages-link,
@@ -529,7 +530,7 @@ body {
   display: block;
   min-width: 24px;
   min-height: 17px;
-  padding: 11.5px 11.665px ;
+  padding: 12px 12px ;
 }
 
 .navigation-icon{
@@ -650,7 +651,7 @@ body {
 
 .control-mark{
   position: absolute;
-  top: 1.5px;
+  top: 2px;
   left: 0;
   width: 20px;
   height: 20px;
@@ -905,14 +906,13 @@ body {
 }
 
 .sort-title{
-
-  padding: 6.5px 0;
+  padding: 6px 0;
   max-width: 490px;
 }
 
 .sort-select{
   width: 292px;
-  padding: 12.5px 19px;
+  padding: 12px 19px;
   padding-right: 52px;
   background-color: inherit;
   font-family: "PT Sans", sans-serif;
@@ -936,10 +936,7 @@ body {
   line-height: inherit;
 }
 
-.sort-select:hover{
-  outline:2px solid  #000000;
-}
-
+.sort-select:hover,
 .sort-select:focus-visible{
   border-color: #68a2ca;;
 }
